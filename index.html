@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Football Score Keeper</title>
     <link rel="stylesheet" href="./css/style.css">
     <script>
+    let scoreA = 0;
+    let scoreB = 0;
+    function incScoreA(){
+        scoreA++;
+        document.getElementById("scoreA").innerHTML = scoreA;
+    }
+    function incScoreB(){
+        scoreB++;
+        document.getElementById("scoreB").innerHTML = scoreA;
+    }
+    function decScoreA(){
+        scoreA--;
+        document.getElementById("scoreA").innerHTML = scoreA;
+    }
+    function decScoreB(){
+        scoreB--;
+        document.getElementById("scoreB").innerHTML = scoreA;
+    }
+    function reset(){
+        scoreA=0;
+        scoreB=0;
+        document.getElementById("scoreA").innerHTML = scoreA;
+        document.getElementById("scoreB").innerHTML = scoreB;
 
+    }
     </script>
 
 </head>
+
 <body style="background-image: url(./img/GettyImages.webp);
 background-size: cover;">
+    <div class="app-title-container">
+        <h1 class="app-title">⚽Football Score Keeper⚽</h1>
 
-    <h1 class="app-title">⚽Football Score Keeper⚽</h1>
+        <div class="title-card-container">
+            <div class="team-card">
+                <h2 class="team-card-title">Team A 🏐</h2>
+                <p class="team-card-score" id="scoreA">0</p>
+
+                <div class="score-card-button-container">
+                    <span class="score-card-button" onclick="decScoreA()">-</span>
+                    <span class="score-card-button" onclick="incScoreA()">+</span>
+                </div>
+
+            </div>
+
+            <div class="team-card">
+                <h2 class="team-card-title">Team B 🏀</h2>
+                <p class="team-card-score" id="scoreB">0</p>
+
+                <div class="score-card-button-container">
+                    <span class="score-card-button" onclick="decScoreB()">-</span>
+                    <span class="score-card-button" onclick="incScoreB()">+</span>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
 
 </body>
+
 </html>

@@ -1,8 +1,44 @@
 
 .app-title{
     text-align: center;
-    background-color: black;
-    color:white;
+    background-color: rgb(224, 71, 71);
+    color:black;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 3px solid rgb(24, 22, 22);
+}
+.title-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.team-card-title{
+    text-align: center;
+}
+.team-card-score{
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
+.team-card{
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    width: 300px;
+    margin:20px ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+.team-card:hover{
+    box-shadow: 1px 1px 2px 3px black;
+}
+.score-card-button-container{
+    display: flex;
+    justify-content: space-around;
+}
+.score-card-button{
+    box-shadow: 2px 1px 2px black;
+    background-color: beige;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 60px;
 }
