@@ -1,44 +1,77 @@
-
-.app-title{
+.app-title {
     text-align: center;
-    background-color: rgb(224, 71, 71);
-    color:black;
+    background-color: rgb(39, 14, 99);
+    color: white;
     border-radius: 10px;
     border: 3px solid rgb(24, 22, 22);
 }
-.title-card-container{
+
+.title-card-container {
     display: flex;
     justify-content: space-around;
 }
-.team-card-title{
+
+.team-card-title {
     text-align: center;
 }
-.team-card-score{
+
+.team-card-score {
     text-align: center;
     font-size: 100px;
     margin: 0;
 }
-.team-card{
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+.team-card {
+
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
     width: 300px;
-    margin:20px ;
+    margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px rgb(228, 224, 224);
     cursor: pointer;
 }
-.team-card:hover{
-    box-shadow: 1px 1px 2px 3px black;
+
+.team-card:hover {
+    box-shadow: 3px 3px  5px rgb(235, 228, 228);
+    transition: width 5s,height 5s,transform 5s;
 }
-.score-card-button-container{
+
+.score-card-button-container {
     display: flex;
     justify-content: space-around;
 }
-.score-card-button{
-    box-shadow: 2px 1px 2px black;
+
+.score-card-button {
+    box-shadow: 2px 3px 5px rgb(5, 5, 5);
     background-color: beige;
-    border-radius: 50%;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 30px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+
+}
+
+.btn-reset {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    color: #000000;
+    cursor: pointer;
     padding: 8px;
-    font-size: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+
+.btn-reset:hover {
+    box-shadow: 2px 3px 4px rgb(240, 233, 233);
+}
+
+.reset-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
